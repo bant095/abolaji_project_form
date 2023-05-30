@@ -26,7 +26,7 @@
 
     <form action="" name="registration-form" id="registration-form">
       <!-- student information -->
-      <div class="student-info">
+      <div class="info">
         <h3>Student Information</h3>
 
         <div class="form-name">
@@ -52,8 +52,14 @@
             required
           />
         </div>
-        <div>
-          <input type="date" name="dob" id="dob" placeholder="Date of Birth" />
+        <div id="date-id">
+          <input
+            type="date"
+            name="dob"
+            id="dob"
+            placeholder="Date of Birth"
+            required
+          />
           <input
             type="text"
             name="student-id"
@@ -65,7 +71,7 @@
       </div>
 
       <!-- Address -->
-      <div class="address">
+      <div class="info">
         <h3>Address</h3>
         <input
           type="text"
@@ -74,32 +80,38 @@
           placeholder="Street Address"
           required
         />
-        <input type="text" name="city" id="city" placeholder="City" required />
+        <input
+          type="text"
+          name="city"
+          id="address"
+          placeholder="City"
+          required
+        />
         <input
           type="text"
           name="state"
-          id="state"
+          id="address"
           placeholder="State / Province"
           required
         />
         <input
           type="text"
           name="country"
-          id="country"
+          id="address"
           placeholder="Country"
           required
         />
         <input
           type="text"
           name="zip-code"
-          id="zip-code"
+          id="address"
           placeholder="ZIP Code"
           required
         />
       </div>
 
       <!-- Contact information -->
-      <div class="contact-info">
+      <div class="info">
         <h3>Contact Information</h3>
         <input
           type="email"
@@ -108,13 +120,48 @@
           placeholder="E-mail"
           required
         />
-        <input type="text" name="confirm-email" id="confirm-email" />
+        <input type="text" name="confirm-email" id="email" />
       </div>
 
       <!-- Courses -->
-      <div class="courses">
+      <div class="info-course">
         <h3>Courses</h3>
-        <input type="text" name="" id="" />
+        <div class="record">
+          <input type="button" value="Add new record" />
+        </div>
+
+        <!-- Course Records -->
+        <div class="course-record">
+          <!-- Course -->
+          <input list="course" name="course" placeholder="Course" />
+          <datalist id="course">
+            <option value="Course"></option>
+            <option value="Course"></option>
+          </datalist>
+
+          <!-- Level -->
+          <input list="course" name="level" placeholder="Level" />
+          <datalist id="level">
+            <option value="Level"></option>
+            <option value="level"></option>
+          </datalist>
+
+          <!-- Language -->
+          <input list="language" name="language" placeholder="Language" />
+          <datalist id="language">
+            <option value="Language"></option>
+            <option value="Language"></option>
+          </datalist>
+
+          <!-- Start Date -->
+          <input list="start-date" name="start-date" placeholder="Start Date" />
+          <datalist id="start-date">
+            <!-- <input type="date" name="start-date" id="start-date" /> -->
+            <option value="Start Date"></option>
+          </datalist>
+
+          <input type="text" name="text" id="text" />
+        </div>
       </div>
 
       <!-- Comment -->
