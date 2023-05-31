@@ -50,7 +50,7 @@ body{
 #registration-form {
     padding: 20px 0;
     width: 90%;
-    background-color: rgb(255, 187, 187);
+    /* background-color: rgb(255, 187, 187); */
 }
 
 h3 {
@@ -64,15 +64,20 @@ h3 {
     padding-bottom: 20px;
 }
 
-#registration-form input {
-  width: 32%; 
-  margin: 10px 10px 10px 0;
-  padding: 5px; 
+
+ .info input{
+    width: 32%; 
+    margin: 5px 10px 5px 0;
+    padding: 5px; 
+}
+
+.info input:focus {
+    background-color:rgb(227, 226, 252);
+    border: none;
 }
 
 
-
-.info #date-id{
+ .info #dob{
     width: 48.8%;
 }
 
@@ -97,25 +102,31 @@ h3 {
 
 .info-course {
     padding-bottom: 20px;
-    border: 2px solid rgb(112, 112, 112);
-    background-color: rgb(231, 231, 231);
-    width: 99%;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(245, 245, 245);
+    /* width: 99%; */
 }
 
-.info-course .record {
-    width: 50%;  
-}
 
 .record input {
     background: rgb(219, 219, 219);
     border: none;
     text-align: right;
     padding: 15px;
+    margin-bottom: 5px;
+    width: 15%; 
+    cursor: pointer; 
 }
 
-/* .info-course .course-record {
-    width: 60%;
-} */
+.info-course .course-record input {
+   padding: 5px;
+   margin-right: -7px;
+   width: 15%;
+}
+
+.info-course .course-record #text {
+    width: 40%;
+ }
 
 
 
@@ -129,8 +140,35 @@ h3 {
 
 /* Send Request BUTTON  */
 
-.info #send-btn input{
+#send-btn {
     width: 99%;
-    background-color: rgb(10, 98, 199);
+    background-color: rgb(2, 93, 197);
     color: white;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2 Linear;
+    font-size: 1rem;
 }
+
+#send-btn:hover {
+    background-color: blue;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ===================== */
+/* RESPONSIVENESS */
+
+@media (max-width: 1000px) {
+    .header .info {
+        width: 100%;
+    }
+}
+
+
+
+

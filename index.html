@@ -52,7 +52,7 @@
             required
           />
         </div>
-        <div id="date-id">
+        <div class="info">
           <input
             type="date"
             name="dob"
@@ -63,7 +63,7 @@
           <input
             type="text"
             name="student-id"
-            id="student-id"
+            id="dob"
             placeholder="Student ID"
             required
           />
@@ -124,43 +124,49 @@
       </div>
 
       <!-- Courses -->
-      <div class="info-course">
+      <div class="info">
         <h3>Courses</h3>
-        <div class="record">
-          <input type="button" value="Add new record" />
-        </div>
+        <div class="info-course">
+          <div class="record">
+            <input type="button" value="Add new record" />
+          </div>
 
-        <!-- Course Records -->
-        <div class="course-record">
-          <!-- Course -->
-          <input list="course" name="course" placeholder="Course" />
-          <datalist id="course">
-            <option value="Course"></option>
-            <option value="Course"></option>
-          </datalist>
+          <!-- Course Records -->
+          <div class="course-record">
+            <!-- Course -->
+            <input list="course" name="course" placeholder="Course" />
+            <datalist id="course">
+              <option value="Course"></option>
+              <option value="Course"></option>
+            </datalist>
 
-          <!-- Level -->
-          <input list="course" name="level" placeholder="Level" />
-          <datalist id="level">
-            <option value="Level"></option>
-            <option value="level"></option>
-          </datalist>
+            <!-- Level -->
+            <input list="course" name="level" placeholder="Level" />
+            <datalist id="level">
+              <option value="Level"></option>
+              <option value="level"></option>
+            </datalist>
 
-          <!-- Language -->
-          <input list="language" name="language" placeholder="Language" />
-          <datalist id="language">
-            <option value="Language"></option>
-            <option value="Language"></option>
-          </datalist>
+            <!-- Language -->
+            <input list="language" name="language" placeholder="Language" />
+            <datalist id="language">
+              <option value="Language"></option>
+              <option value="Language"></option>
+            </datalist>
 
-          <!-- Start Date -->
-          <input list="start-date" name="start-date" placeholder="Start Date" />
-          <datalist id="start-date">
-            <!-- <input type="date" name="start-date" id="start-date" /> -->
-            <option value="Start Date"></option>
-          </datalist>
+            <!-- Start Date -->
+            <input
+              list="start-date"
+              name="start-date"
+              placeholder="Start Date"
+            />
+            <datalist id="start-date">
+              <!-- <input type="date" name="start-date" id="start-date" /> -->
+              <option value="Start Date"></option>
+            </datalist>
 
-          <input type="text" name="text" id="text" />
+            <input type="text" name="text" id="text" />
+          </div>
         </div>
       </div>
 
