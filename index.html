@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <title>AYODEJI ABOLAJI PROJECT FORM | TIIDELab Assignment</title>
   </head>
   <body>
@@ -128,31 +129,36 @@
         <h3>Courses</h3>
         <div class="info-course">
           <div class="record">
+            <i class="fa-solid fa-plus"></i>
             <input type="button" value="Add new record" />
           </div>
 
           <!-- Course Records -->
           <div class="course-record">
             <!-- Course -->
-            <input list="course" name="course" placeholder="Course" />
-            <datalist id="course">
+            <input list="course" name="course" placeholder="Course" /><i
+              class="fa-solid fa-filter"
+            ></i>
+            <!-- <datalist id="course">
               <option value="Course"></option>
               <option value="Course"></option>
-            </datalist>
+            </datalist> -->
 
             <!-- Level -->
             <input list="course" name="level" placeholder="Level" />
-            <datalist id="level">
+            <i class="fa-solid fa-filter"></i>
+            <!-- <datalist id="level">
               <option value="Level"></option>
               <option value="level"></option>
-            </datalist>
+            </datalist> -->
 
             <!-- Language -->
             <input list="language" name="language" placeholder="Language" />
-            <datalist id="language">
+            <i class="fa-solid fa-filter"></i>
+            <!-- <datalist id="language">
               <option value="Language"></option>
               <option value="Language"></option>
-            </datalist>
+            </datalist> -->
 
             <!-- Start Date -->
             <input
@@ -160,10 +166,10 @@
               name="start-date"
               placeholder="Start Date"
             />
-            <datalist id="start-date">
-              <!-- <input type="date" name="start-date" id="start-date" /> -->
+            <i class="fa-solid fa-filter"></i>
+            <!-- <datalist id="start-date">
               <option value="Start Date"></option>
-            </datalist>
+            </datalist> -->
 
             <input type="text" name="text" id="text" />
           </div>

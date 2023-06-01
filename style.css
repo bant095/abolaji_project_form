@@ -49,7 +49,7 @@ body{
 
 #registration-form {
     padding: 20px 0;
-    width: 90%;
+    width: 100%;
     /* background-color: rgb(255, 187, 187); */
 }
 
@@ -66,7 +66,7 @@ h3 {
 
 
  .info input{
-    width: 32%; 
+    width: 32.1%; 
     margin: 5px 10px 5px 0;
     padding: 5px; 
 }
@@ -163,11 +163,122 @@ h3 {
 /* ===================== */
 /* RESPONSIVENESS */
 
-@media (max-width: 1000px) {
-    .header .info {
+/* @media (max-width: 425px) {
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: -30px;
+    }
+
+    .header img {
+        justify-content: center;
+        width: 150px;
+        height: 60px;
+        float: left;
+    }
+
+    .header h1 {
+        padding-left: -5px;
+        text-align: left;
+        margin:10px 0 2px -20px;
+        width: 400px;
+    }
+
+    .header p {
+        margin:0 -20px;
+        width: 350px;
+    }
+
+    .info input{
+        width: 100%; 
+        margin: 5px 10px 5px 0;
+        padding: 5px; 
+    }
+
+    .info #dob {
         width: 100%;
     }
-}
+
+    /* Address */
+
+    /* .info #street {
+        width: 100%;
+    }
+
+    .info #address {
+        width: 100%;
+    } */
+
+    /* Contact information */
+    /* .info #email {
+        width: 100%;
+    }
+
+    .info-course .record {
+        width: 50%;
+    }
+
+    .course-record {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .course-record input {
+        width: 100%;
+    }
+
+    .info .course-record #text {
+        width: 100%;
+    }
+} */ */
+
+
+/* Max-Width 350px  */
+
+ /* @media (max-width: 320px) {
+
+    .info input{
+        width: 100%; 
+        margin: 5px 10px 5px 0;
+        padding: 5px; 
+    }
+
+    .info #dob {
+        width: 100%;
+    }
+
+    /* Address */
+
+    /* .info #street {
+        width: 100%;
+    }
+
+    .info #address {
+        width: 100%;
+    } */
+
+    /* Contact information */
+    /* .info #email {
+        width: 100%;
+    }
+
+    .info-course .record {
+        width: 50%;
+    }
+
+    .info .course-record input {
+        width: 100%;
+    }
+
+    .info .course-record #text {
+        width: 100%;
+    }
+
+
+
+}  */ */
 
 
 
