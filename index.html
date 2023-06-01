@@ -10,26 +10,31 @@
   </head>
   <body>
     <!-- ======================== -->
-    <!-- HEADER SECTION -->
-    <section class="header">
-      <img src="./Abolaji logo.png" alt="form-logo" />
-      <div class="reg-form">
-        <h1>Student Registration Form</h1>
-        <p>
-          Fill out the form to apply the training course. You can consider your
-          application accepted after you receive a conformation email.
-        </p>
-      </div>
-    </section>
+    <div class="container">
+      <!-- HEADER SECTION -->
+      <section class="header">
+        <div class="logo-box">
+          <p>Your logo here</p>
+        </div>
 
-    <!-- ======================== -->
-    <!-- CONTAINER SECTION -->
+        <div class="reg-form">
+          <h1>Student Registration Form</h1>
+          <p>
+            Fill out the form to apply the training course. You can consider
+            your application accepted after you receive a conformation email.
+          </p>
+        </div>
+      </section>
 
-    <form action="" name="registration-form" id="registration-form">
-      <!-- student information -->
-      <div class="info">
+      <!-- ======================== -->
+      <!-- CONTAINER SECTION -->
+
+      <form action="" id="registration-form">
+        <!-- student information -->
+
         <h3>Student Information</h3>
 
+        <!-- form name -->
         <div class="form-name">
           <input
             type="text"
@@ -53,7 +58,9 @@
             required
           />
         </div>
-        <div class="info">
+
+        <!-- date of birth -->
+        <div class="date-of-birth">
           <input
             type="date"
             name="dob"
@@ -64,130 +71,119 @@
           <input
             type="text"
             name="student-id"
-            id="dob"
+            id="student-id"
             placeholder="Student ID"
             required
           />
         </div>
-      </div>
 
-      <!-- Address -->
-      <div class="info">
+        <!-- Address -->
         <h3>Address</h3>
-        <input
-          type="text"
-          name="street"
-          id="street"
-          placeholder="Street Address"
-          required
-        />
-        <input
-          type="text"
-          name="city"
-          id="address"
-          placeholder="City"
-          required
-        />
-        <input
-          type="text"
-          name="state"
-          id="address"
-          placeholder="State / Province"
-          required
-        />
-        <input
-          type="text"
-          name="country"
-          id="address"
-          placeholder="Country"
-          required
-        />
-        <input
-          type="text"
-          name="zip-code"
-          id="address"
-          placeholder="ZIP Code"
-          required
-        />
-      </div>
+        <div class="address">
+          <input
+            type="text"
+            name="street"
+            id="address"
+            placeholder="Street Address"
+            required
+          />
+        </div>
 
-      <!-- Contact information -->
-      <div class="info">
+        <!-- city -->
+        <div class="city">
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required
+          />
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="State / Province"
+            required
+          />
+        </div>
+
+        <!-- zip code -->
+        <div class="zip-code">
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
+            required
+          />
+          <input
+            type="text"
+            name="zip-code"
+            id="zip-code"
+            placeholder="ZIP Code"
+            required
+          />
+        </div>
+
+        <!-- Contact information -->
         <h3>Contact Information</h3>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="E-mail"
-          required
-        />
-        <input type="text" name="confirm-email" id="email" />
-      </div>
+        <div class="contact-information">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <input type="text" name="confirm-email" />
+        </div>
 
-      <!-- Courses -->
-      <div class="info">
+        <!-- Courses -->
         <h3>Courses</h3>
+
         <div class="info-course">
-          <div class="record">
+          <button class="info-button">
             <i class="fa-solid fa-plus"></i>
-            <input type="button" value="Add new record" />
-          </div>
+            Add new record
+          </button>
 
           <!-- Course Records -->
           <div class="course-record">
-            <!-- Course -->
-            <input list="course" name="course" placeholder="Course" /><i
-              class="fa-solid fa-filter"
-            ></i>
-            <!-- <datalist id="course">
-              <option value="Course"></option>
-              <option value="Course"></option>
-            </datalist> -->
-
-            <!-- Level -->
-            <input list="course" name="level" placeholder="Level" />
-            <i class="fa-solid fa-filter"></i>
-            <!-- <datalist id="level">
-              <option value="Level"></option>
-              <option value="level"></option>
-            </datalist> -->
-
-            <!-- Language -->
-            <input list="language" name="language" placeholder="Language" />
-            <i class="fa-solid fa-filter"></i>
-            <!-- <datalist id="language">
-              <option value="Language"></option>
-              <option value="Language"></option>
-            </datalist> -->
-
-            <!-- Start Date -->
-            <input
-              list="start-date"
-              name="start-date"
-              placeholder="Start Date"
-            />
-            <i class="fa-solid fa-filter"></i>
-            <!-- <datalist id="start-date">
-              <option value="Start Date"></option>
-            </datalist> -->
-
-            <input type="text" name="text" id="text" />
+            <div class="record-box">
+              Course
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Level
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Language
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="record-box">
+              Start Date
+              <i class="fa-solid fa-filter"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Comment -->
-      <textarea
-        name="comment"
-        id="comment"
-        cols="30"
-        rows="10"
-        placeholder="Comments"
-        required
-      ></textarea>
+        <!-- Comment -->
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comments"
+          required
+        ></textarea>
 
-      <!-- Send Request BUTTON -->
-      <input type="submit" value="SEND REQUEST" id="send-btn" />
-    </form>
+        <!-- Send Request BUTTON -->
+
+        <button id="loginForm" class="send-btn">SEND REQUEST</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

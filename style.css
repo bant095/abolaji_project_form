@@ -1,285 +1,309 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-}
-
- /* ========================  */
-/* HEADER SECTION  */
-
-.header {
-    /* background-color: red; */
     display: flex;
-    padding: 20px;
-    width: 90%;
-}
-
-.header img {
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    width: 180px;
+  }
+  
+  /* CONTAINER */
+  .container {
+    width: 95%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* ========================  */
+  /* HEADER SECTION  */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .logo-box {
     height: 100px;
-}
-
-.reg-form {
-    padding: 0px 30px;
-    float: left;
-}
-
-.reg-form h1 {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 45px;
+  }
+  
+  .reg-form h1 {
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 10px;
-}
-
-.reg-form p{
+  }
+  
+  .reg-form p {
     font-size: 1rem;
     color: rgb(34, 34, 34);
     line-height: 25px;
-}
-
-
- /* ========================  */
-/* CONTAINER SECTION  */
-
-#registration-form {
+  }
+  
+  /* ========================  */
+  /* CONTAINER SECTION  */
+  
+  #registration-form {
     padding: 20px 0;
     width: 100%;
     /* background-color: rgb(255, 187, 187); */
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 1.2rem;
-    padding:5px 0;
-}
-
-/* student information */
-
-.info {
-    padding-bottom: 20px;
-}
-
-
- .info input{
-    width: 32.1%; 
-    margin: 5px 10px 5px 0;
-    padding: 5px; 
-}
-
-.info input:focus {
-    background-color:rgb(227, 226, 252);
-    border: none;
-}
-
-
- .info #dob{
-    width: 48.8%;
-}
-
-
-
-/* Address  */
-
-.info #street{
-    width: 99%;
-}
-
-.info #address {
-    width: 48.8%;
-}
-
-.info #email {
-    width: 48.8%;
-}
-
-
-/* Courses */
-
-.info-course {
-    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* student information */
+  
+  .form-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-name input {
+    width: 30%;
+  }
+  
+  /* date of birth */
+  .date-of-birth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .date-of-birth input {
+    width: 48%;
+  }
+  
+  /* address */
+  .address input {
+    width: 100%;
+  }
+  
+  /* city section */
+  .city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .city input {
+    width: 48%;
+  }
+  
+  /* zip code */
+  .zip-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .zip-code input {
+    width: 48%;
+  }
+  
+  /* contact information */
+  .contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-information input {
+    width: 48%;
+  }
+  
+  #registration-form input {
+    padding: 12px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background: transparent;
+  }
+  
+  #registration-form input:focus {
+    background-color: rgb(227, 226, 252);
+  }
+  
+  /* Courses */
+  
+  .info-course {
+    padding: 10px;
     border: 1px solid rgb(223, 223, 223);
     background-color: rgb(245, 245, 245);
     /* width: 99%; */
-}
-
-
-.record input {
-    background: rgb(219, 219, 219);
+  }
+  
+  .info-button {
+    padding: 14px 30px;
+    background-color: rgb(227, 226, 252);
     border: none;
-    text-align: right;
-    padding: 15px;
-    margin-bottom: 5px;
-    width: 15%; 
-    cursor: pointer; 
-}
-
-.info-course .course-record input {
-   padding: 5px;
-   margin-right: -7px;
-   width: 15%;
-}
-
-.info-course .course-record #text {
-    width: 40%;
- }
-
-
-
-/* Comment */
-
-#comment {
-    width: 99%;
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .info-button .fa-solid {
+    margin-right: 10px;
+  }
+  
+  .course-record {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+  }
+  
+  .course-record .record-box {
+    border-right: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    width: 180px;
+    cursor: pointer;
+  }
+  
+  .course-record .record-box .fa-solid {
+    font-size: 10px;
+  }
+  
+  /* Comment */
+  
+  #comment {
+    width: 100%;
     margin-top: 20px;
     padding: 10px;
-}
-
-/* Send Request BUTTON  */
-
-#send-btn {
-    width: 99%;
-    background-color: rgb(2, 93, 197);
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Send Request BUTTON  */
+  
+  .send-btn {
+    width: 100%;
+    background: rgb(2, 93, 197);
     color: white;
-    padding: 10px;
+    padding: 15px;
     border: none;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2 Linear;
-    font-size: 1rem;
-}
-
-#send-btn:hover {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  
+  .send-btn:hover {
     background-color: blue;
-    font-size: 1.1rem;
-}
-
-
-
-
-/* ===================== */
-/* RESPONSIVENESS */
-
-/* @media (max-width: 425px) {
+  }
+  
+  /* RESPONSIVE SECTION */
+  @media (min-width: 1240px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 98%;
+    }
+  
     .header {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left: -30px;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 20px 10px;
     }
-
-    .header img {
-        justify-content: center;
-        width: 150px;
-        height: 60px;
-        float: left;
+  
+    .logo-box {
+      margin-right: 0;
     }
-
-    .header h1 {
-        padding-left: -5px;
-        text-align: left;
-        margin:10px 0 2px -20px;
-        width: 400px;
+  
+    .reg-form h1 {
+      font-size: 1.5rem;
+      margin-top: 20px;
     }
-
-    .header p {
-        margin:0 -20px;
-        width: 350px;
+  }
+  
+  @media (max-width: 425px) {
+    .form-name {
+      flex-direction: column;
     }
-
-    .info input{
-        width: 100%; 
-        margin: 5px 10px 5px 0;
-        padding: 5px; 
+  
+    .form-name input {
+      width: 100%;
     }
-
-    .info #dob {
-        width: 100%;
+  
+    .date-of-birth {
+      flex-direction: column;
     }
-
-    /* Address */
-
-    /* .info #street {
-        width: 100%;
+  
+    .date-of-birth input {
+      width: 100%;
     }
-
-    .info #address {
-        width: 100%;
-    } */
-
-    /* Contact information */
-    /* .info #email {
-        width: 100%;
+  
+    .city {
+      flex-direction: column;
     }
-
-    .info-course .record {
-        width: 50%;
+  
+    .city input {
+      width: 100%;
     }
-
+  
+    .zip-code {
+      flex-direction: column;
+    }
+  
+    .zip-code input {
+      width: 100%;
+    }
+  
+    .contact-information {
+      flex-direction: column;
+    }
+  
+    .contact-information input {
+      width: 100%;
+    }
+  
+    .info-button {
+      width: 100%;
+    }
+  
     .course-record {
-        display: flex;
-        flex-direction: column;
+      flex-direction: column;
     }
-
-    .info .course-record input {
-        width: 100%;
+  
+    .course-record .record-box {
+      width: 100%;
+      border-bottom: 1px solid #999;
     }
-
-    .info .course-record #text {
-        width: 100%;
-    }
-} */ */
-
-
-/* Max-Width 350px  */
-
- /* @media (max-width: 320px) {
-
-    .info input{
-        width: 100%; 
-        margin: 5px 10px 5px 0;
-        padding: 5px; 
-    }
-
-    .info #dob {
-        width: 100%;
-    }
-
-    /* Address */
-
-    /* .info #street {
-        width: 100%;
-    }
-
-    .info #address {
-        width: 100%;
-    } */
-
-    /* Contact information */
-    /* .info #email {
-        width: 100%;
-    }
-
-    .info-course .record {
-        width: 50%;
-    }
-
-    .info .course-record input {
-        width: 100%;
-    }
-
-    .info .course-record #text {
-        width: 100%;
-    }
-
-
-
-}  */ */
-
-
-
-
+  }
+  
