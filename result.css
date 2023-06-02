@@ -1,5 +1,11 @@
 .container {
     padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container h1 {
+    color: rgb(6, 79, 148);
+    font-weight: 700;
   }
   
   .result {
@@ -8,9 +14,8 @@
   }
   
   .result-box {
+    border: 1px solid #a3a3a3;
     padding: 10px;
     width: 200px;
-    background: #ece9e9;
-    border: 1px solid #999;
   }
   

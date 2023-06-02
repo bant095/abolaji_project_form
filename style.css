@@ -22,7 +22,7 @@
   }
   
   /* ========================  */
-  /* HEADER SECTION  */
+  /*====THE HEADER SECTION ===== */
   
   .header {
     display: flex;
@@ -61,12 +61,11 @@
   }
   
   /* ========================  */
-  /* CONTAINER SECTION  */
+  /* ===THE CONTAINER SECTION  ====*/
   
   #registration-form {
     padding: 20px 0;
     width: 100%;
-    /* background-color: rgb(255, 187, 187); */
   }
   
   h3 {
@@ -156,7 +155,6 @@
     padding: 10px;
     border: 1px solid rgb(223, 223, 223);
     background-color: rgb(245, 245, 245);
-    /* width: 99%; */
   }
   
   .info-button {
@@ -222,8 +220,13 @@
   .send-btn:hover {
     background-color: blue;
   }
+
   
-  /* RESPONSIVE SECTION */
+
+/* ================================= */
+  /*===== RESPONSIVE SECTION ======*/
+
+/* Min-width 1240px */
   @media (min-width: 1240px) {
     .container {
       width: 80%;
@@ -251,8 +254,12 @@
       margin-top: 20px;
     }
   }
+
+
+  /* Max-width 425px */
   
   @media (max-width: 425px) {
+
     .form-name {
       flex-direction: column;
     }
